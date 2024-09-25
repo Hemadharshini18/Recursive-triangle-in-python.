@@ -1,0 +1,9 @@
+def print_triangle(n, current=1):
+    if current > n:
+        return
+    print('*' * current)
+    print_triangle(n, current + 1)
+
+# Set the number of rows
+n = 5
+print_triangle(n)
